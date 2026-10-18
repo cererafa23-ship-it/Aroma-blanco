@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#263c2b">
+<title>Aroma Blanca | Jabones artesanales</title>
+<style>
+:root{--green:#263c2b;--cream:#fbf4e8;--ink:#29362b;--pink:#f4c6d5;--line:#dfd5c4}
+*{box-sizing:border-box}body{margin:0;background:#fffdf8;color:var(--ink);font-family:Arial,sans-serif}
+header{background:var(--green);color:#fffdf8;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}.monogram{font-family:Georgia,serif;font-size:42px;border-right:1px solid #b7c2b3;padding-right:12px}.brand h1{font:24px Georgia,serif;letter-spacing:2px;margin:0}.brand p{font-size:10px;letter-spacing:3px;margin:4px 0 0}
+header a{color:white;text-decoration:none;font-weight:bold}
+.hero{padding:44px 6%;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:25px;background:linear-gradient(110deg,#fff7eb,#f5e5d2)}
+.hero h2{font:italic clamp(38px,6vw,68px) Georgia,serif;line-height:1;margin:0 0 12px;color:#263c2b}.hero .sub{font:italic 25px Georgia,serif;margin:0 0 16px}.hero p{font-size:17px;line-height:1.6}.hero-art{min-height:250px;border-radius:22px;background:radial-gradient(circle at 30% 40%,#d8b6e6 0 12%,transparent 13%),radial-gradient(circle at 62% 35%,#f5d7a7 0 15%,transparent 16%),radial-gradient(circle at 52% 68%,#b9c99b 0 18%,transparent 19%),linear-gradient(135deg,#e6d2b4,#fff4df);display:flex;align-items:center;justify-content:center;overflow:hidden}.hero-art img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply;opacity:.92}
+.perks{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px;font-size:14px}.perks span{border-left:1px solid #9a9b80;padding-left:12px}
+main{padding:28px 4% 40px}.section-title{text-align:center;font:italic 38px Georgia,serif;margin:0 0 6px}.price-note{text-align:center;margin:0 0 24px;font-weight:bold;letter-spacing:.6px}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.product{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fffdf8;display:flex;flex-direction:column;box-shadow:0 3px 12px #3428150b}.photo{height:170px;display:flex;align-items:center;justify-content:center;font-size:70px;position:relative;overflow:hidden}.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent, #ffffff12)}.soap{width:130px;height:90px;border-radius:12px 12px 18px 18px;transform:rotate(-8deg);box-shadow:inset 0 5px 8px #ffffff80,inset 0 -8px 12px #00000018,0 12px 15px #00000025;display:flex;align-items:center;justify-content:center;color:#ffffffb0;font-size:28px;border:1px solid #ffffff55}.lavanda{background:linear-gradient(135deg,#d7c6e6,#9c7cc0)}.lavanda .soap{background:#8060a8}.romero{background:linear-gradient(135deg,#dce8c8,#80996b)}.romero .soap{background:#8a9e69}.avena{background:linear-gradient(135deg,#f5e6c6,#d6b27b)}.avena .soap{background:#e6cf9e}.arroz{background:linear-gradient(135deg,#f5edda,#d9c8a5)}.arroz .soap{background:#f0e5c9}.naranja{background:linear-gradient(135deg,#ffd6a1,#ee913e)}.naranja .soap{background:#efa24e}.cafe{background:linear-gradient(135deg,#d6a579,#70472f)}.cafe .soap{background:#805136}.chicle{background:linear-gradient(135deg,#ffd8e4,#f29abd)}.chicle .soap{background:#f18db2}.product-body{padding:13px;display:flex;flex-direction:column;flex:1}.product h3{font:italic 26px Georgia,serif;margin:0 0 6px;color:#273b2b}.product p{font-size:14px;line-height:1.45;margin:0 0 12px;flex:1}.price{font-weight:bold;font-size:22px;text-align:center;margin:4px 0 12px}.order{display:block;text-align:center;text-decoration:none;background:var(--green);color:white;border-radius:24px;padding:11px 8px;font-weight:bold}.order:hover{background:#3c5941}
+footer{background:#f0f0df;padding:28px 5%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:center}footer h3{margin:0 0 10px;font:italic 23px Georgia,serif}footer p{line-height:1.7;margin:4px 0}.contact{font-size:22px;font-weight:bold}footer a{color:var(--green)}
+@media(max-width:900px){.products{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero-art{min-height:190px}footer{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){header{padding:12px 4%}.brand h1{font-size:19px}.monogram{font-size:34px}.hero{padding:30px 5%}.hero .sub{font-size:21px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}main{padding:24px 3%}.photo{height:125px}.soap{width:100px;height:70px}.product h3{font-size:22px}.product-body{padding:10px}.product p{font-size:12px}.order{font-size:13px;padding:10px 5px}footer{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand"><div class="monogram">AB</div><div><h1>AROMA BLANCA</h1><p>JABONES ARTESANALES</p></div></div>
+ <nav><a href="#inicio">Inicio</a> &nbsp; · &nbsp; <a href="#jabones">Nuestros jabones</a> &nbsp; · &nbsp; <a href="https://wa.me/34608802418">WhatsApp</a></nav>
+</header>
+<section class="hero" id="inicio">
+ <div><h2>Jabones<br>Artesanales</h2><p class="sub">Naturales, suaves y únicos</p><p>Pequeños rituales, grandes momentos. Elige tu aroma favorito y haz tu pedido directamente por WhatsApp.</p>
+ <div class="perks"><span>🌿 Ingredientes naturales</span><span>♡ Hechos con cariño</span><span>✧ Aromas únicos</span></div></div>
+ <div class="hero-art"><img src="assets/referencia-aroma-blanca.png" alt="Presentación de jabones artesanales Aroma Blanca"></div>
+</section>
+<main id="jabones">
+ <h2 class="section-title">Nuestros Jabones</h2><p class="price-note">TODOS POR SOLO 3 € · EXCEPTO EL DE BEBÉ (4 €)</p>
+ <div class="products">
+  <article class="product"><div class="photo lavanda"><div class="soap">✿</div></div><div class="product-body"><h3>Lavanda</h3><p>Relajante y aromático. Ideal para disfrutar de un momento de calma.</p><div class="price">3 €</div><a class="order" href="https://wa.me/34608802418?text=Hola%2C%20quiero%20pedir%20el%20jab%C3%B3n%20de%20Lavanda.">☏ Hacer pedido</a></div></article>
+  <article class="product"><div class="photo cafe"><div class="soap">✧</div></div><div class="product-body"><h3>Café</h3><p>Exfoliante y revitalizante, con un aroma cálido y delicioso.</p><div class="price">3 €</div><a class="order" href="https://wa.me/34608802418?text=Hola%2C%20quiero%20pedir%20el%20jab%C3%B3n%20de%20Caf%C3%A9.">☏ Hacer pedido</a></div></article>
+  <article class="product"><div class="photo romero"><div class="soap">❧</div></div><div class="product-body"><h3>Romero</h3><p>Purificante y refrescante, con un aroma herbal.</p><div class="price">3 €</div><a class="order" href="https://wa.me/34608802418?text=Hola%2C%20quiero%20pedir%20el%20jab%C3%B3n%20de%20Romero.">☏ Hacer pedido</a></div></article>
+  <article class="product"><div class="photo avena"><div class="soap">✧</div></div><div class="product-body"><h3>Avena y Miel</h3><p>Nutritivo y suavizante, ideal para una rutina delicada.</p><div class="price">3 €</div><a class="order" href="https://wa.me/34608802418?text=Hola%2C%20quiero%20pedir%20el%20jab%C3%B3n%20de%20Avena%20y%20Miel.">☏ Hacer pedido</a></div></article>
+  <article class="product"><div class="photo naranja"><div class="soap">✿</div></div><div class="product-body"><h3>Naranja</h3><p>Frescura cítrica para empezar el día con energía.</p><div class="price">3 €</div><a class="order" href="https://wa.me/34608802418?text=Hola%2C%20quiero%20pedir%20el%20jab%C3%B3n%20de%20Naranja.">☏ Hacer pedido</a></div></article>
+  <article class="product"><div class="photo arroz"><div class="soap">✧</div></div><div class="product-body"><h3>Arroz y Avena</h3><p>Hidratante y suavizante, pensado para el cuidado diario.</p><div class="price">3 €</div><a class="order" href="https://wa.me/34608802418?text=Hola%2C%20quiero%20pedir%20el%20jab%C3%B3n%20de%20Arroz%20y%20Avena.">☏ Hacer pedido</a></div></article>
+  <article class="product"><div class="photo chicle"><div class="soap">♡</div></div><div class="product-body"><h3>Bebé</h3><p>Suave y delicado, con un toque dulce para los más pequeños.</p><div class="price">4 €</div><a class="order" href="https://wa.me/34608802418?text=Hola%2C%20quiero%20pedir%20el%20jab%C3%B3n%20de%20Beb%C3%A9%20de%20chicle.">☏ Hacer pedido</a></div></article>
+ </div>
+</main>
+<footer>
+ <div><h3>Envíos a domicilio</h3><p><b>Península:</b> envío gratis a partir de 25 €.</p><p><b>Islas:</b> envío gratis a partir de 40 €.</p></div>
+ <div><h3>Pedidos e información</h3><p class="contact">+34 608 802 418</p><p>Haz tu pedido directamente por WhatsApp.</p><a href="https://wa.me/34608802418">Abrir WhatsApp →</a></div>
+ <div><h3>Aroma Blanca</h3><p>Jabones artesanales con cariño.</p><p>Gracias por apoyar lo natural ♡</p></div>
+</footer>
+</body></html>
